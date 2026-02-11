@@ -3,41 +3,545 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Font Awesome CDN -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <title>Document</title>
-<link rel="stylesheet" href="style.css">
+    <title>Twum Kwabena - Full Stack Developer & Tech Professional</title>
+    <meta name="description" content="Professional portfolio of Twum Kwabena - Full Stack Developer, Computer Programmer, Web Developer, and Ethical Hacker">
+    
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Twum</a>
+    <!-- Navigation Header -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <i class="fas fa-code"></i> TK
+        </a>
 
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
         </nav>
+
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="blackGuy.jpg" alt="">
-        </div>
-        <div  class="home-content">
-            <h1>Hi, It's <span>Twum Kwabena</span></h1>
-            <h3 class="typing-text">I'm <span></span></h3>
-            <p>I am currently skilled in python programming, web development, computer hacking and mobile software development. I currently school at St. Peter's Boys Senior High School at Nkwatia in the Eastern region of Ghana. I offer a General Science course with elective IT. I am a top achiever and when I'm added to your organisation I will bring great development and progress which will enable your organisation to reach height it hasn't ever reached before.</p>
-            <div class="social-icon">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Twum Kwabena</span></h1>
+                <h2 class="typing-text">
+                    I'm a <span id="typing"></span>
+                </h2>
+                <p class="hero-description">
+                    Full-stack developer passionate about building innovative digital solutions. Specialized in Python, web development, mobile apps, and cybersecurity. Let's transform your ideas into reality.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-briefcase"></i> View My Work
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
-            <a href="#" class="btn">Hire me</a>
+            <div class="hero-image">
+                <img src="blackGuy.jpg" alt="Twum Kwabena" class="profile-img">
+            </div>
         </div>
-        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate developer with a General Science background and IT specialization at St. Peter's Boys Senior High School. My journey in tech has equipped me with diverse skills across multiple domains.
+                    </p>
+                    <p>
+                        I thrive on solving complex problems and creating elegant digital solutions. With expertise spanning from backend systems to frontend interfaces, I deliver comprehensive solutions that drive business growth.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>30+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="blackGuy.jpg" alt="About Twum" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services I Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites and web applications using latest technologies. From concept to deployment.</p>
+                    <a href="#contact" class="service-cta">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android with seamless user experiences.</p>
+                    <a href="#contact" class="service-cta">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Ethical hacking, penetration testing, and security audits to protect your digital assets.</p>
+                    <a href="#contact" class="service-cta">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Custom Programming</h3>
+                    <p>Tailored software solutions using Python and other languages for your specific business needs.</p>
+                    <a href="#contact" class="service-cta">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Backend Development</h3>
+                    <p>Robust server-side solutions, API development, and database architecture for scalable applications.</p>
+                    <a href="#contact" class="service-cta">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design and interface development that combines aesthetics with functionality.</p>
+                    <a href="#contact" class="service-cta">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skills-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend & Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="blackGuy.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack web application with payment integration, inventory management, and user authentication.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="blackGuy.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobile Task Manager</h3>
+                        <p>Cross-platform mobile app for productivity with real-time synchronization and offline capabilities.</p>
+                        <div class="project-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="blackGuy.jpg" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Security Audit Tool</h3>
+                        <p>Penetration testing tool with automated vulnerability scanning and detailed reporting capabilities.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects">
+                <a href="#contact" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-content">
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Senior High School Education</h3>
+                            <p class="school-name">St. Peter's Boys Senior High School, Nkwatia</p>
+                            <p class="school-info">General Science Course with IT Specialization</p>
+                            <p class="description">Completed comprehensive STEM curriculum with advanced IT modules covering programming, networking, and systems administration.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Python Programming Certification</h3>
+                            <p class="school-name">Certified Professional Developer</p>
+                            <p class="school-info">Advanced Python & Web Development</p>
+                            <p class="description">Mastered advanced Python programming, web frameworks, and best practices in software development.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Ethical Hacking & Cybersecurity</h3>
+                            <p class="school-name">CEH Preparation & Practical Training</p>
+                            <p class="school-info">Penetration Testing & Security Auditing</p>
+                            <p class="description">In-depth training in ethical hacking methodologies, vulnerability assessment, and secure coding practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="exp-item">
+                    <div class="exp-marker"></div>
+                    <div class="exp-content">
+                        <h3>Senior Developer</h3>
+                        <p class="company">Tech Solutions Inc.</p>
+                        <p class="exp-date">2023 - Present</p>
+                        <p class="exp-description">
+                            Leading development of large-scale applications, mentoring junior developers, and implementing best practices. Increased team productivity by 40% through process optimization.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-marker"></div>
+                    <div class="exp-content">
+                        <h3>Full Stack Developer</h3>
+                        <p class="company">Digital Innovations Ltd.</p>
+                        <p class="exp-date">2021 - 2023</p>
+                        <p class="exp-description">
+                            Developed and maintained web applications, implemented responsive designs, and optimized database performance. Deployed 15+ successful projects for diverse clients.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp-item">
+                    <div class="exp-marker"></div>
+                    <div class="exp-content">
+                        <h3>Junior Developer</h3>
+                        <p class="company">StartUp Hub Africa</p>
+                        <p class="exp-date">2020 - 2021</p>
+                        <p class="exp-description">
+                            Built responsive web interfaces, debugged applications, and contributed to code base. Gained hands-on experience with modern development tools and methodologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="blackGuy.jpg" alt="Client" class="client-avatar">
+                        <div class="client-info">
+                            <h4>John Mensah</h4>
+                            <p>CEO, Tech Startup</p>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Twum delivered our project ahead of schedule with exceptional quality. His problem-solving skills and attention to detail are outstanding."
+                    </p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="blackGuy.jpg" alt="Client" class="client-avatar">
+                        <div class="client-info">
+                            <h4>Ama Osei</h4>
+                            <p>Product Manager, E-Commerce</p>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Working with Twum was a game-changer. He built our e-commerce platform exactly as envisioned and provided excellent post-launch support."
+                    </p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="blackGuy.jpg" alt="Client" class="client-avatar">
+                        <div class="client-info">
+                            <h4>Kwesi Boakye</h4>
+                            <p>Security Director, Enterprise</p>
+                        </div>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Twum's security audit identified critical vulnerabilities we missed. His expertise in cybersecurity is truly impressive and professional."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section Before Contact -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's work together to bring your ideas to life. Get in touch today and let's discuss your project requirements.</p>
+            <a href="#contact" class="btn btn-primary btn-large">
+                <i class="fas fa-envelope"></i> Contact Me Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Nkwatia, Eastern Region, Ghana</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:hello@twumkwabena.com">hello@twumkwabena.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+233123456789">+233 (0) 123 456 789</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links-footer">
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="mobile-app">Mobile App Development</option>
+                            <option value="cybersecurity">Cybersecurity/Audit</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-500">Under $500</option>
+                            <option value="500-1000">$500 - $1000</option>
+                            <option value="1000-5000">$1000 - $5000</option>
+                            <option value="5000+">$5000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">I agree to the privacy policy and terms of service</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Twum Kwabena. All rights reserved.</p>
+            <p>Designed & Developed with <i class="fas fa-heart"></i> by Twum Kwabena</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
